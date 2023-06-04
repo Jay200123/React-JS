@@ -4,7 +4,7 @@ function Footer(){
     
     return(
         <footer className="card-footer">
-            <ul>
+            <ul className="li-container">
             <li><i className="fa fa-twitter" aria-hidden="true"></i></li>
             <li><i className="fa fa-facebook-official" aria-hidden="true"></i></li>
             <li><i className="fa fa-instagram" aria-hidden="true"></i></li>

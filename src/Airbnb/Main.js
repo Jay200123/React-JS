@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../Airbnb/Navbar"
 import Hero from "../Airbnb/Hero";
+import Card from "../Airbnb/Card";
 
 function Main(){
     
@@ -8,6 +9,7 @@ function Main(){
         <div>
             <Navbar/>
             <Hero/>
+            <Card/>
         </div>
     )
 }

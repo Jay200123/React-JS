@@ -15,6 +15,8 @@ function Card(){
             </div>
             <p className="bold">Testing Card Stats</p>
             <p>Testing Card Stats</p>
+
+            
         </div>
     )
 }

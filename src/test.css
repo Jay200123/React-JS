@@ -2,6 +2,7 @@ body{
     font-family: 'Inter', sans-serif;
     margin: 0;
     background-color: #282D35;
+    color: white;
 }
 
 .navbar{
@@ -91,4 +92,26 @@ main{
     margin-top: 50px;
     margin-bottom: 50px;
 
+}
+
+.props-container{
+    text-align: left;
+    margin: 5px;
+    padding: 5px;
+}
+
+.props-container li{
+    padding: 5px;
+}
+
+.props-container li::marker{
+    color: cyan;
+}
+
+.home-page{
+    background-image: url("./images/react-icon.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 25px 25px;
 }

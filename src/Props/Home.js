@@ -34,6 +34,7 @@ function Home(){
              section = 'BSIT-NS-3A'
              email='johnneri.escobella@tup.edu.ph'
              />
+             
         </div>
     )
 }

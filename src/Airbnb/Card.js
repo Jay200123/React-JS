@@ -2,6 +2,7 @@ import React from "react";
 import star from '../images/Red_star.png'
 
 function Card(data){
+    
     return(
         <div className="card-container">
             <img className="card-img" src={data.images} alt="Logo 1"/>

@@ -9,6 +9,8 @@
 // import './card.css'
 
 import './air_bnb.css'
+
+// card kitten contacts 
 // import Page from './Contact/ContactCard';
 // import Cards from './Contact/SampleCards'
 // import Kitten1 from './images/kitten-test.jpg'
@@ -16,19 +18,41 @@ import './air_bnb.css'
 // import Kitten3 from './images/kitten2.jpg'
 // import Kitten4 from './images/kitten3.jpg'
 // import Home from "./Props/Home"
-import Navbar from "./Airbnb/Navbar"
-import Hero from "./Airbnb/Hero";
-import Card from "./Airbnb/Card";
 
-import bnb1 from "./images/airbnb-bg.png"
-import bnb2 from "./images/bnb1.png"
-import bnb3 from "./images/bnb3.png"
-import bnb4 from "./images/bnb2.png"
+// air bnb components
+// import Navbar from "./Airbnb/Navbar"
+// import Hero from "./Airbnb/Hero";
+// import Card from "./Airbnb/Card";
 
+// import bnb1 from "./images/airbnb-bg.png"
+// import bnb2 from "./images/bnb1.png"
+// import bnb3 from "./images/bnb3.png"
+// import bnb4 from "./images/bnb2.png"
+
+// Joke Components
+import Joke from "./JokeComponents/Joke"
+import JokeHeader from "./JokeComponents/Nav"
+import Data from "./jwk-src"
 
 function App() {
+
+  const JokeData = Data.map((jokes)=>{
+
+    return <Joke
+     count = {jokes.count}
+     setup = {jokes.setup}
+     punchline = {jokes.punchline}
+     images = {jokes.images}
+    />
+
+  })
+
+  console.log(JokeData.images)
   return (
+
     <div>
+      <JokeHeader/>
+     {JokeData}
       {/* <Header/>
       <Home/> */}
       {/* <Page/> */}
@@ -78,7 +102,7 @@ function App() {
       <Main/> */}
       {/* <Content/> */}
 
-      <Navbar/>
+      {/* <Navbar/>
 
             <Hero/>
             <div className="card-content">
@@ -110,8 +134,7 @@ function App() {
             header = "airbnb Canada"
             rating = "5.4"
             />
-            </div>
-
+            </div> */}
     </div>
     
   );

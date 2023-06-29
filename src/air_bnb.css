@@ -84,3 +84,17 @@ section{
     margin-right: 80px;
     
 }
+
+.joke-container{
+    text-align: left;
+    margin: 5px;
+    padding: 5px;
+}
+
+.joke-container li{
+    padding: 5px;
+}
+
+.joke-container li::marker{
+    color: cyan;
+}

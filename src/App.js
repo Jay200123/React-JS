@@ -2,7 +2,7 @@
 // import Content from './components/Content';
 // import Header from './components/Header';
 // import Main from './components/Main';
-// import './test.css'
+import './test.css'
 
 // import Page from './Cards/Page';
 // import Header from './components/Header'
@@ -20,20 +20,17 @@ import './air_bnb.css'
 // import Home from "./Props/Home"
 
 // air bnb components
-import Navbar from "./Airbnb/Navbar"
-import Hero from "./Airbnb/Hero";
-import Card from "./Airbnb/Card";
-import data from './airbnb-data';
-
-// import bnb1 from "./images/airbnb-bg.png"
-// import bnb2 from "./images/bnb1.png"
-// import bnb3 from "./images/bnb3.png"
-// import bnb4 from "./images/bnb2.png"
+// import Navbar from "./Airbnb/Navbar"
+// import Hero from "./Airbnb/Hero";
+// import Card from "./Airbnb/Card";
+// import data from './airbnb-data';
 
 // Joke Components
 // import Joke from "./JokeComponents/Joke"
 // import JokeHeader from "./JokeComponents/Nav"
 // import Data from "./jwk-src"
+
+import Home from "./Props/Home"
 
 function App() {
 
@@ -50,27 +47,29 @@ function App() {
 
   // airbnb components
   
-  const airbnb = data.map((data)=>{
+  // const airbnb = data.map((data)=>{
 
-    return <Card
-     rating={data.rating} 
-     country={data.country}
-     header={data.header}
-     images={data.images}
-       />
-  })
+  //   return <Card
+  //    rating={data.rating} 
+  //    country={data.country}
+  //    header={data.header}
+  //    images={data.images}
 
-  console.log(airbnb)
+  //   />
+    
+  // })
+
+  // console.log(airbnb)
 
   return (
 
     <div>
-
-     <Navbar/>
+      <Home/>
+     {/* <Navbar/>
     <Hero/>
     <div className="card-content">
       {airbnb}
-    </div>
+    </div> */}
 
 
       {/* <JokeHeader/>

@@ -20,9 +20,10 @@ import './air_bnb.css'
 // import Home from "./Props/Home"
 
 // air bnb components
-// import Navbar from "./Airbnb/Navbar"
-// import Hero from "./Airbnb/Hero";
-// import Card from "./Airbnb/Card";
+import Navbar from "./Airbnb/Navbar"
+import Hero from "./Airbnb/Hero";
+import Card from "./Airbnb/Card";
+import data from './airbnb-data';
 
 // import bnb1 from "./images/airbnb-bg.png"
 // import bnb2 from "./images/bnb1.png"
@@ -30,29 +31,51 @@ import './air_bnb.css'
 // import bnb4 from "./images/bnb2.png"
 
 // Joke Components
-import Joke from "./JokeComponents/Joke"
-import JokeHeader from "./JokeComponents/Nav"
-import Data from "./jwk-src"
+// import Joke from "./JokeComponents/Joke"
+// import JokeHeader from "./JokeComponents/Nav"
+// import Data from "./jwk-src"
 
 function App() {
 
-  const JokeData = Data.map((jokes)=>{
+  //Joke Components
+  // const JokeData = Data.map((jokes)=>{
 
-    return <Joke
-     count = {jokes.count}
-     setup = {jokes.setup}
-     punchline = {jokes.punchline}
-     images = {jokes.images}
-    />
+  //   return <Joke
+  //    count = {jokes.count}
+  //    setup = {jokes.setup}
+  //    punchline = {jokes.punchline}
+  //   />
 
+  // })
+
+  // airbnb components
+  
+  const airbnb = data.map((data)=>{
+
+    return <Card
+     rating={data.rating} 
+     country={data.country}
+     header={data.header}
+     images={data.images}
+       />
   })
 
-  console.log(JokeData.images)
+  console.log(airbnb)
+
   return (
 
     <div>
-      <JokeHeader/>
-     {JokeData}
+
+     <Navbar/>
+    <Hero/>
+    <div className="card-content">
+      {airbnb}
+    </div>
+
+
+      {/* <JokeHeader/>
+     {JokeData} */}
+
       {/* <Header/>
       <Home/> */}
       {/* <Page/> */}
@@ -102,39 +125,6 @@ function App() {
       <Main/> */}
       {/* <Content/> */}
 
-      {/* <Navbar/>
-
-            <Hero/>
-            <div className="card-content">
-
-            <Card
-            images = {bnb1}
-            country = "Philippines"
-            header = "airbnb PH"
-            rating = "5.1"
-            />
-
-            <Card
-            images = {bnb2}
-            country = "USA"
-            header = "airbnb US"
-            rating = "5.2"
-            />
-
-            <Card
-            images = {bnb3}
-            country = "UK"
-            header = "airbnb UK"
-            rating = "5.3"
-            />
-
-            <Card
-            images = {bnb4}
-            country = "Canada"
-            header = "airbnb Canada"
-            rating = "5.4"
-            />
-            </div> */}
     </div>
     
   );

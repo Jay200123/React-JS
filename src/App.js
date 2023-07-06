@@ -2,35 +2,41 @@
 // import Content from './components/Content';
 // import Header from './components/Header';
 // import Main from './components/Main';
-import './test.css'
+// import './styles/test.css'
 
 // import Page from './Cards/Page';
 // import Header from './components/Header'
-// import './card.css'
+// import './styles/card.css'
 
-import './air_bnb.css'
+// import './styles/air_bnb.css'
 
 // card kitten contacts 
 // import Page from './Contact/ContactCard';
-// import Cards from './Contact/SampleCards'
-// import Kitten1 from './images/kitten-test.jpg'
-// import Kitten2 from './images/kitten1.jpg'
-// import Kitten3 from './images/kitten2.jpg'
-// import Kitten4 from './images/kitten3.jpg'
+// import Cards from './Contact/SampleCards';
+
 // import Home from "./Props/Home"
+
+// import Cat from './data/cat-data';
 
 // air bnb components
 // import Navbar from "./Airbnb/Navbar"
 // import Hero from "./Airbnb/Hero";
 // import Card from "./Airbnb/Card";
-// import data from './airbnb-data';
+// import data from './data/airbnb-data';
 
 // Joke Components
 // import Joke from "./JokeComponents/Joke"
 // import JokeHeader from "./JokeComponents/Nav"
-// import Data from "./jwk-src"
+// import Data from "./data/jwk-src"
 
-import Home from "./Props/Home"
+// import Home from "./Props/Home"
+
+//Journal Components
+import Navigation from "./Journal/JournalHeader";
+import JournalCard from "./Journal/JournalCard";
+import Journal from "./data/journal-data";
+import "./styles/journal.css"
+
 
 function App() {
 
@@ -38,9 +44,7 @@ function App() {
   // const JokeData = Data.map((jokes)=>{
 
   //   return <Joke
-  //    count = {jokes.count}
-  //    setup = {jokes.setup}
-  //    punchline = {jokes.punchline}
+  //   {...jokes}
   //   />
 
   // })
@@ -50,21 +54,34 @@ function App() {
   // const airbnb = data.map((data)=>{
 
   //   return <Card
-  //    rating={data.rating} 
-  //    country={data.country}
-  //    header={data.header}
-  //    images={data.images}
-
+  //    key={data.id}
+  //    {...data}
   //   />
     
   // })
 
   // console.log(airbnb)
 
+  // const catdata = Cat.map((cat)=>{
+    
+  //   return <Cards
+  //   {...cat}
+  //   />
+
+  // }) 
+
+  const journalData = Journal.map((journal)=>{
+
+    return <JournalCard {...journal}/>
+  })
+
   return (
 
     <div>
-      <Home/>
+      <Navigation/>
+      {journalData}
+      {/* <Home/> */}
+
      {/* <Navbar/>
     <Hero/>
     <div className="card-content">
@@ -74,46 +91,14 @@ function App() {
 
       {/* <JokeHeader/>
      {JokeData} */}
-
-      {/* <Header/>
+      {/* 
+      <Header/>
       <Home/> */}
+
+       {/* <Header/> */}
       {/* <Page/> */}
+      {/* { catdata } */}
 
-      {/* <Cards 
-
-      image={Kitten1}
-      name="Fluffs" //there are props being passed down to Cards Component
-      phone="09123456789"
-      email="mrfluffs@gmail.com"
-
-      />
-
-      <Cards
-
-       image={Kitten2}
-       name="Furball"
-       phone="09246810"
-       email="mrfurball@gmail.com" 
-
-      />
-      
-      <Cards
-
-       image={Kitten3}
-       name="SoftBall"
-       phone="09368912"
-       email="mrsoft@gmail.com" 
-
-      />
-
-      <Cards
-
-       image={Kitten4}
-       name="Shitten"
-       phone="09481216"
-       email="mrshittens@gmail.com" 
-
-      /> */}
 
       {/* <Main/> */}
 

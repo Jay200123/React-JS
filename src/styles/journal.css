@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-journal{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    color: white;
+    background-color: #F55A5A;
+    padding: 10px 30px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-text{
+    font-size: 20px;
+    font-family: "Roboto Thin", Arial, sans-serif;
+
+}
+
+.card-img{
+
+    margin: 20px;
+    border-radius: 10px;
+    height: 390px;
+    width: 250px;
+
+
+}
+
+.text-date{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.card-container{
+
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+.card-title{
+    font-size: 60px;
+    margin: 5px;
+}
+
+.card-information{
+   text-align: left;
+
+}
+
+.card-location{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.card-info{
+    text-align: center;
+}
+
+.location-icon{
+    height: 30px;
+    width: 30px;
+}
+
+.link-location{
+    color: #918E9B;
+    margin: 5px;
+   text-decoration: underline;
+}
+

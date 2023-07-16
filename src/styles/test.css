@@ -33,7 +33,7 @@ body{
 main{
     color: white;
     padding: 57px 27px;
-    background-image: url('./images/react-logo.png');
+    background-image: url('../images/react-icon.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size:contain;
@@ -109,9 +109,27 @@ main{
 }
 
 .home-page{
-    background-image: url("./images/react-icon.jpg");
+    background-image: url("../images/react-icon.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     padding: 25px 25px;
+}
+
+.state-div{
+    color: white;
+    text-align: center;
+    margin: 50px;
+}
+
+.state-ans{
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+    border-radius: 50%;
+    color: black;
+    text-align: center;
+    margin-left: 500px;
+    
 }

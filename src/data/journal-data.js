@@ -1,6 +1,5 @@
 import MountFuji from "../images/Fuji.jpg"
 import locIcon from "../images/loc-icon.png"
-
 import OperaHouse from "../images/operahouse.jpg"
 import Banawi from "../images/banawi.jpg"
 

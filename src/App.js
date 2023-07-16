@@ -32,11 +32,16 @@
 // import Home from "./Props/Home"
 
 //Journal Components
-import Navigation from "./Journal/JournalHeader";
-import JournalCard from "./Journal/JournalCard";
-import Journal from "./data/journal-data";
-import "./styles/journal.css"
+// import Navigation from "./Journal/JournalHeader";
+// import JournalCard from "./Journal/JournalCard";
+// import Journal from "./data/journal-data";
+// import "./styles/journal.css"
 
+import "./styles/meme.css"
+import Navbar from "./MemeGenerator/Navbar"
+import MemeForm from "./MemeGenerator/Form";
+
+// import { React, useState} from "react"
 
 function App() {
 
@@ -70,16 +75,54 @@ function App() {
 
   // }) 
 
-  const journalData = Journal.map((journal)=>{
+  //journal data 
 
-    return <JournalCard {...journal}/>
-  })
+  // const journalData = Journal.map((journal)=>{
+
+  //   return <JournalCard {...journal}/>
+  // })
+
+
+  //  const items = ['item1', 'item2','item3']
+
+
+  //   const item = items.map((array)=>{
+
+  //   return array
+
+  //   })
+
+  //   function addItem(){
+  //     const newItem = `item${items.length + 1}`
+  //     items.push(newItem)
+  //     console.log(items)
+  //    }
+
+
+  // const answer = useState("Yes")
+  // console.log(answer)
 
   return (
 
     <div>
-      <Navigation/>
-      {journalData}
+
+      {/* <div className='state-div'>
+        <h3>Is State in React Important?</h3>
+        <h4 className='state-ans'>{answer}</h4>
+      </div> */}
+
+      {/* <button onClick={addItem}>Add item</button>
+      <p>{item}</p> */}
+
+      <Navbar/>
+      <MemeForm/> 
+      
+
+
+      {/* journal components */}
+      {/* <Navigation/>
+      {journalData} */}
+      
       {/* <Home/> */}
 
      {/* <Navbar/>

@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.meme-nav{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+    align-items: center;
+    color: white;
+    background-color:blueviolet;
+    overflow: hidden;
+}
+
+.nav-img{
+    height: 40px;
+    margin-right: 7px;
+    margin: 10px;
+}
+
+.nav-header{
+    margin-right: auto;
+    font-size: 22px;
+}
+
+.header-right{
+    margin: 5px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.forms{
+    padding: 36px;
+    margin: 10px;
+}
+
+.form-container{
+   display: grid;
+   grid-template: 40px 40px / 1fr 1fr;
+   gap:20px
+}
+
+.form-input{
+    border-radius: 5px;
+    border: 1px solid #D5D4D8;
+    text-indent: 5px;
+}
+
+.form-btn{
+    grid-column: 1 / -1;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+.meme-img{
+   height: 500px;
+   width: 500px;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{  
+    padding: 36px;
+    margin: 10px;
+}
+
+

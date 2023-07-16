@@ -58,6 +58,7 @@ body{
 
 .card-information{
    text-align: left;
+   padding: 5px;
 
 }
 
@@ -70,6 +71,7 @@ body{
 
 .card-info{
     text-align: center;
+    padding: 5px;
 }
 
 .location-icon{

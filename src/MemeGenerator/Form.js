@@ -19,33 +19,38 @@ function MemeForm(){
 
     // }
 
-    const[meme, setMeme] = useState({
+    const [meme, setMeme] = useState({
+
         topText:"",
         bottomText:"",
-        randomImage:"https://i.imgflip.com/1g8my4.jpg"
+        randomImage:"https://i.imgflip.com/m78d.jpg"
     })
 
-    const[images, setMemeImages] = useState(memesData)
+    const [memeImage, setMemeImage] = useState(memesData)
 
-    function generateMeme(){
+    function memeClick(){
 
-        const randomMeme = images.data.memes
+        const randomMeme = memeImage.data.memes
         const randomId = Math.floor(Math.random() * randomMeme.length)
-        const url = randomMeme[randomId].url
 
-        setMeme(prevImg=>({...prevImg, randomImage:url }))
+        const url = randomMeme[randomId].url
+        const name = randomMeme[randomId].name
+        
+        setMeme(prevMeme=>({...prevMeme, randomImage:url, topText:name, bottomText:name }))
+       
 
     }
+
 
     return(
    <main>
     <div className="form-container">
            
 
-                <input className="form-input" type="text" placeholder="this is a textbox"/>
-                <input className="form-input"  type="text" placeholder="this is a textbox"/>
+                <input className="form-input" type="text" value={meme.topText} placeholder="this is a textbox"/>
+                <input className="form-input"  type="text" value={meme.bottomText} placeholder="this is a textbox"/>
 
-                <button className="form-btn" onClick={generateMeme}>
+                <button className="form-btn" onClick={memeClick}>
                     Get a new meme image
                 </button>
                 <div className="img-container">
